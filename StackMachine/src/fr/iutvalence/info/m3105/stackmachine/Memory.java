@@ -16,7 +16,7 @@ public class Memory {
 		return 0;
 	}
 
-	public void write(int currentAddress, Object opCode) {
+	public void write(int currentAddress, int opCode) {
 		// TODO Auto-generated method stub
 		
 	}

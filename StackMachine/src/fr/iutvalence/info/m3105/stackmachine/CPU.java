@@ -38,8 +38,9 @@ public class CPU
 			while (true)
 			{
 				// TODO something is missing here...
-
+			
 				// System.err.print("@" + this.programCounter + ": ");
+				int opCode = this.programMemory.read(this.programCounter);
 				switch (opCode)
 				{
 					case HALT:
