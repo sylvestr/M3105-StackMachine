@@ -28,6 +28,7 @@ public class CPU
 	public final static int DUP		= 0x14;
 	public final static int POP		= 0x15;
 	private Object ioSystem;
+	private Object programMemory;
 	
 	// TODO something is missing here...
 
@@ -41,6 +42,7 @@ public class CPU
 			
 				// System.err.print("@" + this.programCounter + ": ");
 				int opCode = this.programMemory.read(this.programCounter);
+				
 				switch (opCode)
 				{
 					case HALT:
@@ -186,6 +188,8 @@ public class CPU
 	}
 
 	 void wireToProgramMemory(Memory programMemory) {
+		 
+		 
 		// TODO Auto-generated method stub
 		
 	}
